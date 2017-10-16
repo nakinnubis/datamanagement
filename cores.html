@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/sign.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+    
+        <script src="js/bootstrap.min.js"></script>
+        
+        <title>
+            Data Inventory
+        </title>
+          
+    </head>
+    <body>
+            <div class="menu">
+                    <div class="logo">
+                        <a href="index.html">Data Inventory</a>
+                    </div>
+                    <div class="nav">
+                        <div class="button" onclick= location.href="login.html">
+                            Sign out
+                        </div>    
+                    </div>
+                                           
+                               
+                </div>
+        <div class="header">
+            <a>Core Samples</a>
+        </div>
+
+        <div class="tablet">
+            <table id="tab" class="display">
+                <thead>
+                    <tr>
+                        <th>ClientName</th>
+                        <th>Fieldname</th>
+                        <th>Digitized</th>
+                        <th>Formations</th>
+                    </tr>
+                </thead>
+            </table>
+
+        </div>
+        <footer>
+                <div class="footer">
+                    &copy 2017 | PMSL Operations Team
+                </div>
+       
+        </footer>
+    </body>
+    <script>
+        var myBooks =[
+        [
+         "Chevron",
+         "Diebu-Creek2",
+         '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+        "sandstone,shale,dolomite,clay,mudstone"
+      ],
+      [
+         "Chevron",
+         "Diebu-Creek3",
+        '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+        "sandstone,shale,dolomite,clay,mudstone"
+     ],
+      [
+         "Chevron",
+       "Diebu-Creek4",
+       '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+      "sandstone,shale,dolomite,clay,mudstone"
+      ],
+      [
+      "Chevron",
+       "Diebu-Creek5",
+        '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+       "sandstone,shale,dolomite,clay,mudstone"
+     ],
+      [
+        "Chevron",
+        "Diebu-Creek6",
+        '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+        "sandstone,shale,dolomite,clay,mudstone"
+     ],
+     [
+         "Chevron",
+        "Diebu-Creek7",
+         '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+       "sandstone,shale,dolomite,clay,mudstone"
+      ],
+     [
+         "Chevron",
+        "Diebu-Creek8",
+       '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+       "sandstone,shale,dolomite,clay,mudstone"
+     ],
+      [
+        "Chevron",
+         "Diebu-Creek9",
+        '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+        "sandstone,shale,dolomite,clay,mudstone"
+      ],
+     [
+        "Chevron",
+         "Diebu-Creek10",
+         '<a href="../Coredata/Chevron/image.tiff" target="_blank">Log Image</a>',
+        "sandstone,shale,dolomite,clay,mudstone"
+     ]
+    ];
+
+$(document).ready(function() {
+    $('#tab').DataTable( {
+        data: myBooks
+    } );
+} );
+    
+    
+    
+    </script>

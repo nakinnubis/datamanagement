@@ -1,0 +1,34 @@
+Endpoints to connect to
+
+For login you can use the or do it the way you like
+http://dataadministration.apphb.com/Endpoint/Index.aspx/Login
+
+for the data to insert in the tree view display use this endpoint
+http://dataadministration.apphb.com/Endpoint/Index.aspx/DthreeList
+
+for the wellname or concession use this e.g like than nembe and santabrabra
+http://dataadministration.apphb.com/Endpoint/Index.aspx/ConcessionList
+
+
+
+
+for well data e.g returning well 
+http://dataadministration.apphb.com/Endpoint/Welldata.aspx/GetWelldata
+
+for wells 
+http://dataadministration.apphb.com/Endpoint/Well.aspx/GetWellData
+
+
+for production data
+http://dataadministration.apphb.com/Endpoint/Productiondata/ProductionData
+
+for coredata
+
+http://dataadministration.apphb.com/Endpoint/Coredata.aspx/CoreData
+
+for biodata
+
+http://dataadministration.apphb.com/Endpoint/Biodata/BioData
+
+
+

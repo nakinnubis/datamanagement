@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/sign.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>
+        Data Inventory
+    </title>
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <a href="index.html">Data Inventory</a>
+        </div>
+        <div class="nav">
+            <div class="button" onclick= location.href="login.html">
+                Sign out
+            </div>
+        </div>
+
+
+    </div>
+    <div class="header">
+        <a>Production Data</a>
+    </div>
+    <div class="tablet">
+        <table id="tab" class="display">
+            <thead>
+                <tr>
+                    <th>ClientName</th>
+                    <th>Fieldname</th>
+                    <th>ProductionRate</th>
+                    <th>LastProducDate</th>
+                    <th>WellName</th>
+                    <th>Water</th>
+                    <th>Gas</th>
+                    <th>OilCum</th>
+                    <th>ProductionReport</th>
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+    
+        
+    
+    
+</body>
+
+<footer>
+    <div class="footer">
+        &copy 2017 | PMSL Operations Team
+    </div>
+
+
+</footer>
+
+
+<script type="text/javascript">
+      /* var obj = {};
+       obj.password = "1234567";
+       obj.username = "shell@spdc.com";
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function () {
+           if (this.readyState == 4 && this.status == 200) {
+               var data = JSON.parse(this.responseText);
+               let arrays = data.d;
+               //var da = data.d;
+               var datas = arrays.replace(/\\/g, "");
+               //let res = [];
+               //res.push(datas);
+               function concatArray() {
+                   var newStr = datas.substring(1, datas.length - 1);
+
+                   // EXTRACT VALUE FOR HTML HEADER. 
+        // ('Book ID', 'Book Name', 'Category' and 'Price')*/
+        var myBooks=[
+        [
+        "Chevron",
+       "akowba",
+         "33",
+        "2016",
+        "IRONS 2-4H",
+        "50971.5",
+        "0",
+       "-7.6666666667",
+        '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+         "oloibiri ",
+         "33",
+         "2015",
+         "EAGLE CREEK 1-26H",
+          "54309",
+          "0",
+         "-10.666666667",
+         '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+          "santa barbara",
+        "32",
+          "2012",
+         "MCCORT 3-28H",
+       "57646.5",
+         "0",
+         "-13.666666667",
+         '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+         "odeama creeek",
+         "32",
+          "2016",
+        "INHERST 2-14H",
+        "60984",
+         "0",
+         "-16.666666667",
+         '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+         "nembe creek",
+        "32",
+        "2015",
+        "INHERST     1-14H",
+         "64321.5",
+        "0",
+         "-19.666666667",
+         '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+        "Chevron",
+          "oloibiri ",
+        "32",
+        "2012",
+        "EAGLE CREEK 2-26H",
+      "67659",
+         "0",
+       "-22.666666667",
+       '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+        "Chevron",
+        "akowba",
+         "32",
+        "2016",
+        "EAGLE CREEK 3-26H",
+       "70996.5",
+        "0",
+        "-25.666666667",
+        '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+        "Chevron",
+      "oloibiri ",
+       "33",
+     "2015",
+         "SHUGERT 3-1H",
+        "74334",
+     "0",
+    "-28.666666667",
+    '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+          "santa barbara",
+          "34",
+      "2012",
+      "SHUGERT 2-1H",
+      "77671.5",
+        "0",
+        "-31.666666667",
+        '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+        "Chevron",
+         "odeama creeek",
+         "37",
+         "2016",
+          "SHUGERT 3-12H",
+          "81009",
+          "0",
+          "-34.666666667",
+         '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+          "santa barbara",
+          "40",
+          "2015",
+          "SHUGERT 2-12H",
+          "84346.5",
+          "0",
+          "-37.666666667",
+          '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+        "Chevron",
+          "akowba",
+        "43",
+        "2012",
+         "INHERST 3-14H",
+         "87684",
+         "0",
+       "-40.666666667",
+       '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+        "odeama creeek",
+        "46",
+         "2016",
+       "MCCORT 4-28H",
+        "91021.5",
+       "0",
+        "-43.666666667",
+        '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+        "Chevron",
+       "santa barbara",
+         "50",
+        "2015",
+         "SHUGERT 4-12H",
+      "94359",
+        "0",
+       "-46.666666667",
+       '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+         "akowba",
+       "53",
+        "2012",
+       "STUTZMAN 3-14H",
+       "97696.5",
+      "0",
+       "-49.666666667",
+       '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ],
+       [
+         "Chevron",
+       "odeama creeek",
+        "57",
+         "2016",
+         "BOLTON # 3-29H",
+        "101034",
+       "0",
+       "-52.666666667",
+       '<a href="../Productionreport/Chevron/chevron.xlsx" target="_blank">Report Document</a>'
+       ]
+               ];
+
+$(document).ready(function() {
+    $('#tab').DataTable( {
+        data: myBooks
+    } );
+} );
+
+       /* var col = [];
+        for (var i = 0; i < myBooks.length; i++) {
+            for (var key in myBooks[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+        console.log(col);
+        //console.log(newStr);
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < myBooks.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = myBooks[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+
+
+                   // console.log(newStr);
+               }
+               concatArray();
+               
+           }
+       };
+    xhttp.open("POST", "http://dataadministration.apphb.com/Endpoint/Welldata.aspx/GetWelldata", true)
+    xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhttp.send(JSON.stringify(obj));*/
+
+    
+</script>
+</html>

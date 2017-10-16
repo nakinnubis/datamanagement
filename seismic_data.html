@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/sign.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+
+    <script src="js/bootstrap.min.js"></script>
+    
+    <title>
+        Data Inventory
+    </title>
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <a href="index.html">Data Inventory</a>
+        </div>
+        <div class="nav">
+            <div class="button" onclick= location.href="login.html">
+                Sign out
+            </div>
+            <div class="button" onclick= location.href="login.html">
+                    Sign out
+                </div>
+        </div>
+
+
+    </div>
+    <div class="header">
+        <a>Seismic Data</a>
+    </div>
+    <div class="tablet">
+        <table id="tab" class="display">
+            <thead>
+                <tr>
+                    <th>ClientName</th>
+                    <th>Acquistion</th>
+                    <th>Observlog</th>
+                    <th>Navigation</th>
+                    <th>Rawdata</th>
+                    <th>Processing</th>
+                    
+                </tr>
+            </thead>
+
+        </table>
+    </div>
+    
+        
+    
+    
+</body>
+
+<footer>
+    <div class="footer">
+        &copy 2017 | PMSL Operations Team
+    </div>
+
+
+</footer>
+
+
+<script type="text/javascript">
+      /* var obj = {};
+       obj.password = "1234567";
+       obj.username = "shell@spdc.com";
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function () {
+           if (this.readyState == 4 && this.status == 200) {
+               var data = JSON.parse(this.responseText);
+               let arrays = data.d;
+               //var da = data.d;
+               var datas = arrays.replace(/\\/g, "");
+               //let res = [];
+               //res.push(datas);
+               function concatArray() {
+                   var newStr = datas.substring(1, datas.length - 1);
+
+                   // EXTRACT VALUE FOR HTML HEADER. 
+        // ('Book ID', 'Book Name', 'Category' and 'Price')*/
+        var myBooks=[
+        
+        ["Shell Production Company",
+        '<a href="../AcquistionR/Shell/2007098_PAC_Origin Energy_T44P_v1.pdf" target="_blank">PAC Origin Energy</a>',
+        "../Obserslog/Shell/MGL0814_Observer_logs_all.pdf",
+        "../Navigationdata/Shell/nav.xlsx",
+        "../Rawdata/Shell/raw.xlsx",
+        "../Processingdata/Shell/shell.xlsx"
+    ],
+    [
+        "Shell Production Company",
+        '<a href="../AcquistionR/Shell/Energy_T44P_v1.pdf" target="_blank">Energy_T44P_v1.pdf</a>',
+        "../Obserslog/Shell/MGL0814_Observer_logs_all.pdf",
+        "../Navigationdata/Shell/nav1.xlsx",
+        "../Rawdata/Shell/raw1.xlsx",
+        "../Processingdata/Shell/shell1.xlsx"
+    ],
+    [
+        "Shell Production Company",
+        '<a href="../AcquistionR/Shell/2007098_PAC_Origin Energy_T44P_v1.pdf" target="_blank">PAC Origin Energy</a>',
+        "../Obserslog/Shell/MGL0814_Observer_logs_all.pdf",
+        "../Navigationdata/Shell/nav2.xlsx",
+        "../Rawdata/Shell/raw1.xlsx",
+        "../Processingdata/Shell/shell1.xlsx"
+    ]
+];
+
+$(document).ready(function() {
+    $('#tab').DataTable( {
+        data: myBooks
+    } );
+} );
+
+    
+</script>
+</html>

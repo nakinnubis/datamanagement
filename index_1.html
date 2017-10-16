@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <title>
+            Data Inventory
+        </title>
+          
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html">Data Inventory</a>
+            </div>
+        </div>
+        <div>
+            <div class="dropdown">
+                <button onclick= "myFunction1()" class="primary_button">
+                    Field
+                </button>
+                <div id="myDropdown1" class="dropdown_buttons">
+                    <button onclick ="myFunction2()" class="secondary_button">
+                        Diebu Creek
+                    </button>
+                    <button onclick ="myFunction2()" class="secondary_button">
+                        Bonga
+                    </button> 
+                </div>
+                <div id="myDropdown2" class="dropdown_buttons2">
+                    <button onclick = location.href="well_log.html" class="tertiary_button">
+                        Well Logs
+                    </button>
+                    <button class="tertiary_button">
+                        Biostratigraphy
+                    </button>
+                    <button class="tertiary_button">
+                        Core Samples
+                    </button>
+                    <button class="tertiary_button">
+                        Seismic Data
+                    </button>
+                    <button class="tertiary_button">
+                        Production Data
+                    </button>
+                    <button class="tertiary_button">
+                        Well Report
+                    </button> 
+                </div>
+            </div>
+        </div>
+                
+    </body>
+        <script>
+         function myFunction1() {
+             var x = document.getElementById("myDropdown1");
+             var y = document.getElementById("myDropdown2");
+             if(x.style.display === "none"){
+                 x.style.display = "block";
+             }
+             else{
+                 x.style.display = "none";
+                 y.style.display = "none";
+             }
+             
+         }
+
+         function myFunction2() {
+            document.getElementById("myDropdown2").style.display = "inline";
+         }
+        
+
+        </script>
+</html>

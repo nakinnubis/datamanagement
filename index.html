@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/Treant.css"/>
+        <link type="text/css" rel="stylesheet" href="css/connectors.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/sign.css"/>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/connectors.js"></script>
+        <title>
+            Data Inventory
+        </title>
+          
+    </head>
+    <body>
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html">Data Inventory</a>
+            </div>
+           <div class="nav">
+                <div class="button" onclick= location.href="login.html">
+                    Sign out
+                </div>    
+            </div>
+                                   
+                       
+        </div>
+
+                <div>
+                    <div class="chart" id="OrganiseChart-big-commpany"></div>
+                    
+                    <script src="js/vendor/raphael.js"></script>
+                    <script src="js/Treant.js"></script>
+                    <script src="js/connectors.js"></script>
+                
+                    <script>
+                
+                        new Treant( chart_config );
+                
+                    </script>
+                
+                </div>
+                
+            </div>
+        </div>
+                
+    </body>
+        <script>
+         
+         var obj = {};
+                obj.password = "1234567";
+                obj.username = "shell@spdc.com";
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange =function () {
+                    if(this.readyState == 4 && this.status == 200)  {
+                        var data = JSON.parse(this.responseText);
+                        let arrays = data.d;
+                        //var da = data.d;
+                        var datas = arrays.replace(/\\/g, "");
+                        console.log(datas);
+                    }
+                };
+                xhttp.open("POST", "http://dataadministration.apphb.com/Endpoint/Index.aspx/DthreeList",true)
+                xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xhttp.send(JSON.stringify(obj));
+
+        </script>
+    <div>
+        <div class="footer_home">
+            &copy 2017 | PMSL Operations Team
+        </div>
+
+    </div>
+</html>

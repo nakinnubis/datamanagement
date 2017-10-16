@@ -1,0 +1,278 @@
+
+for seismic data
+
+header [  "ClientName", "Acquistion", "Observlog","Navigation","Rawdata","Processing"]
+
+
+[
+    ["Shell Production Company",
+        "AcquistionR/Shell/2007098_PAC_Origin Energy_T44P_v1.pdf",
+        "Obserslog/Shell/MGL0814_Observer_logs_all.pdf",
+        "Navigationdata/Shell/nav.xlsx",
+        "Rawdata/Shell/raw.xlsx",
+        "Processingdata/Shell/shell.xlsx"
+    ],
+    [
+        "Shell Production Company",
+        "AcquistionR/Shell/Energy_T44P_v1.pdf",
+        "Obserslog/Shell/MGL0814_Observer_logs_all.pdf",
+        "Navigationdata/Shell/nav1.xlsx",
+        "Rawdata/Shell/raw1.xlsx",
+        "Processingdata/Shell/shell1.xlsx"
+    ],
+    [
+        "Shell Production Company",
+        "AcquistionR/Shell/Energy_T44P_v1.pdf",
+        "Obserslog/Shell/MGL0814_Observer_logs_all.pdf",
+        "Navigationdata/Shell/nav2.xlsx",
+        "Rawdata/Shell/raw1.xlsx",
+        "Processingdata/Shell/shell1.xlsx"
+    ]
+]
+
+for core data
+header [ "ClientName","Fieldname","Digitized","Formations"]
+[ [
+      "Chevron","Chevnem","Coredata/Chevron/image.tiff", "sandstone,shale,dolomite,clay,mudstone"
+      ],
+  [
+         "Chevron",
+         "Chevnem2",
+         "Coredata/Chevron/image.tiff",
+        "sandstone,shale,dolomite,clay,mudstone"
+      ],
+      [
+         "Chevron",
+         "Chevnem3",
+        "Coredata/Chevron/image.tiff",
+        "sandstone,shale,dolomite,clay,mudstone"
+     ],
+      [
+         "Chevron",
+       "Chevnem4",
+       "Coredata/Chevron/image.tiff",
+      "sandstone,shale,dolomite,clay,mudstone"
+      ],
+      [
+      "Chevron",
+       "Chevnem5",
+        "Coredata/Chevron/image.tiff",
+       "sandstone,shale,dolomite,clay,mudstone"
+     ],
+      [
+        "Chevron",
+        "Chevnem6",
+        "Coredata/Chevron/image.tiff",
+        "sandstone,shale,dolomite,clay,mudstone"
+     ],
+     [
+         "Chevron",
+        "Chevnem7",
+         "Coredata/Chevron/image.tiff",
+       "sandstone,shale,dolomite,clay,mudstone"
+      ],
+     [
+         "Chevron",
+        "Chevnem8",
+       "Coredata/Chevron/image.tiff",
+       "sandstone,shale,dolomite,clay,mudstone"
+     ],
+      [
+        "Chevron",
+         "Chevnem9",
+        "Coredata/Chevron/image.tiff",
+        "sandstone,shale,dolomite,clay,mudstone"
+      ],
+     [
+        "Chevron",
+         "Chevnem10",
+         "Coredata/Chevron/image.tiff",
+        "sandstone,shale,dolomite,clay,mudstone"
+     ]
+
+]
+
+
+
+Production data
+
+header [ "ClientName","Fieldname", "ProductionRate", "LastProducDate","WellName", "Water","Gas","OilCum", "ProductionReport"]
+[
+[
+       "Chevron",
+      "akowba",
+        "33",
+       "2016",
+       "IRONS 2-4H",
+       "50971.5",
+       "0",
+      "-7.6666666667",
+       "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+        "oloibiri ",
+        "33",
+        "2015",
+        "EAGLE CREEK 1-26H",
+         "54309",
+         "Gas":"0",
+        "-10.666666667",
+        "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+         "santa barbara",
+       "32",
+         "2012",
+        "MCCORT 3-28H",
+      "57646.5",
+        "0",
+        "-13.666666667",
+      "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+        "odeama creeek",
+        "32",
+         "2016",
+       "INHERST 2-14H",
+       "60984",
+        "0",
+        "-16.666666667",
+         "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+        "nembe creek",
+       "32",
+       "2015",
+       "INHERST     1-14H",
+        "64321.5",
+       "0",
+        "-19.666666667",
+         "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+       "Chevron",
+         "oloibiri ",
+       "32",
+       "2012",
+       "EAGLE CREEK 2-26H",
+     "67659",
+        "0",
+      "-22.666666667",
+      "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+       "Chevron",
+       "akowba",
+        "32",
+       "2016",
+       "EAGLE CREEK 3-26H",
+      "70996.5",
+       "0",
+       "-25.666666667",
+    "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+       "Chevron",
+     "oloibiri ",
+      "33",
+    "2015",
+        "SHUGERT 3-1H",
+       "74334",
+    "0",
+   "-28.666666667",
+   "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+         "santa barbara",
+         "34",
+     "2012",
+     "SHUGERT 2-1H",
+     "77671.5",
+       "0",
+       "-31.666666667",
+       "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+       "Chevron",
+        "odeama creeek",
+        "37",
+        "2016",
+         "SHUGERT 3-12H",
+         "81009",
+         "0",
+         "-34.666666667",
+        "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+         "Fieldname":"santa barbara",
+         "ProductionRate":"40",
+         "LastProducDate":"2015",
+         "WellName":"SHUGERT     2-12H",
+         "Water":"84346.5",
+         "Gas":"0",
+         "OilCum":"-37.666666667",
+         "ProductionReport":"Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+       "Chevron",
+         "akowba",
+       "43",
+       "2012",
+        "INHERST 3-14H",
+        "87684",
+        "0",
+      "-40.666666667",
+         "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+       "odeama creeek",
+       "46",
+        "2016",
+      "MCCORT 4-28H",
+       "91021.5",
+      "0",
+       "-43.666666667",
+       "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+       "Chevron",
+      "santa barbara",
+        "50",
+       "2015",
+        "SHUGERT 4-12H",
+     "94359",
+       "0",
+      "-46.666666667",
+         "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+        "akowba",
+      "53",
+       "2012",
+      "STUTZMAN 3-14H",
+      "97696.5",
+     "0",
+      "-49.666666667",
+     "Productionreport/Chevron/chevron.xlsx"
+      ],
+      [
+        "Chevron",
+      "odeama creeek",
+       "57",
+        "2016",
+        "BOLTON # 3-29H",
+       "101034",
+      "0",
+      "-52.666666667",
+     "Productionreport/Chevron/chevron.xlsx"
+      ]
+]
+  
